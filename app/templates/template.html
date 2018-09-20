@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Conversor Oracle - PostgreSql</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <body>
+    <div class="container">
+
+<!--        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul id="messages" class="list-unstyled">
+                    {% for message in messages %}
+                        <li class="alert alert-success">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}-->
+       <div class="page-header">
+           <div class="pull-left">
+            <h1>{{ titulo }}</h1>
+           </div>
+           <div class="pull-right">
+               <button type="submit" form="form_converte" class="btn btn-default">Converter</button>
+           </div>
+            <div class="clearfix"></div>
+       </div>
+
+        {% block conteudo %}{% endblock %}
+
+    <div/>
+</body>
+</html>

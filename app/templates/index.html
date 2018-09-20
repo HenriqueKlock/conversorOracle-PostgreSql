@@ -1,0 +1,19 @@
+{% extends "template.html" %}
+{% block conteudo %}
+<div class="row">
+    <form id="form_converte" action="{{ url_for('converter') }}" method="post">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label for="text_entrada">Entrada:</label>
+                <textarea class="form-control" rows="20" name="text_entrada"  id="text_entrada"></textarea>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label for="text_saida">Saida:</label>
+                <textarea class="form-control" rows="20"  id="text_saida">{{ texto }}</textarea>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}
